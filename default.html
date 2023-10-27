@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>这是我的自我介绍网站</title>
+    <link rel="stylesheet" href="default.css" />
+    <script>
+        function displayDate(){
+            document.getElementById("time").innerHTML=Date();
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="displayDate()"  id="time">今者何时？</button>
+    <div id="mailbox">
+        <form>
+            向我提问!!<br>
+            <input type="text" name="questions">
+            <input type="submit" name="questions">
+        </form>
+    </div>
+    <div id="header">
+    <table>
+        <tr style="font-size:100px;">
+            <th class="th1">浮动</th>
+            <th class="th2">的</th>
+            <th class="th3">白</th>
+            <th class="th3">云</th>
+            <th class="th4">的小站</th>
+        </tr>
+    </table>
+    </div>
+    <div id="body">
+    <div id="bgr1"><a href="吃.html">爱吃</a></div>
+    <div id="bgr2"><a href="爱好.html">爽玩</a></div>
+    <div id="bgr3"><a href="不爱学习.html">喜学</a></div>
+    <div id="bgr4"><a href="dreaming.html">幻想</a></div>
+    </div>
+    <hr style="width: 100%;border:1px solid black;position: static;"/>
+</body>
+</html>

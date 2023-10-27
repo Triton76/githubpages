@@ -1,0 +1,114 @@
+#header{
+    position: relative; 
+    width: 100%;    
+    height:200px;
+    border-radius:10px;
+    background-color: antiquewhite;
+    animation-name:drop;
+    animation-duration:1s;
+
+}
+#header table{
+    margin:0px auto;
+    height:200px;   
+    
+}
+.th1{color :lightpink;padding:10px;transform: rotate(-1deg);}
+.th2{color :rgb(241, 187, 86);padding:20px;transform: rotate(5deg)}
+.th3{color :rgb(110, 255, 110);transform:rotate(2deg)}
+.th4{color :rgb(150, 224, 249);padding:15px;transform:rotate(1deg)}
+#head{
+    margin:50px auto;
+    width:100%;
+    position:absolute;
+}
+#head ul{
+    list-style:none;
+    margin-left:0px;
+}
+#body a{
+    color:#A5469B;
+}
+@keyframes drop{
+    from{margin-top:-20%;}
+    to{}
+}
+@keyframes  ll{
+        from{
+            margin-top:100%;
+        }
+        to{
+
+        }
+}
+#bgr1{
+    background-color: #FF7F27;
+    width:25%;
+    height:800px;
+    z-index: -1;
+    float:left;
+    text-align:center;
+    animation-name:ll;
+    animation-duration: 3s;   
+
+}
+#bgr1 a{
+    font-size: 200px;
+    text-decoration: none;
+}
+#bgr2{
+    background-color: #A0FFF9;
+    width:25%;
+    height:800px;
+    z-index: -1;
+    float:left;
+    text-align:center; 
+    animation-name:ll;
+    animation-duration: 3.5s;
+
+}
+#bgr2 a{
+    font-size:200px;
+    text-decoration: none;
+}
+#bgr3{
+    float:left;
+    background-color: #FF6E90;
+    width:25%;
+    height:800px;
+    z-index: -1;
+    text-align: center;
+    animation-name:ll;
+    animation-duration: 3.75s; 
+}
+#bgr3 a{
+    font-size:200px;
+    text-decoration: none;
+}
+#bgr4{
+    float:left;
+    background-color: #74F466;
+    position:static;
+    width:25%;
+    height:800px;
+    z-index: -1;
+    text-align: center;
+    animation-name:ll;
+    animation-duration: 4s; 
+}
+#bgr4 a{
+    font-size:200px;
+    text-decoration: none;
+}
+#mailbox{
+    position: absolute;
+    z-index: +1;
+    margin-left: 85%;
+    margin-top:5%;
+}
+#time{
+    position: absolute;
+    z-index: 1;
+    margin-top:12%;
+    margin-left:1%;
+}
