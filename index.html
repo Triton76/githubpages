@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
     <script type="text/javascript">
-        var intervalID
-        window.onload = function(){
-            intervalID = setInterval("toggleSound()",100);
-            }
-    
+        var intervalID;
+
         function toggleSound() {
                     var music = document.getElementById("ms");//获取ID  
-                    var video = document.getElementById("vd")
+                    var video = document.getElementById("vd");
                         
                     if (music && music.paused && video && video.paused) { //判读是否播放  
                         music.play(); //没有就播放 
@@ -16,6 +13,20 @@
                         video.play();
                     }    
             }
+            window.onload = function(){
+            intervalID = setInterval("toggleSound()",1000);
+            }
+
+function playPause() {
+    var music = document.getElementById("ms");
+  if (music.paused) {
+    music.play();
+  } else {
+    music.pause();
+  }
+}
+
+    
     </script>
     
     <style>
@@ -33,7 +44,9 @@
             top: -3%;
             z-index: -37;
         }
+
     </style>
     <video id="vd" autoplay loop muted src="march7th.mp4"></video>
     <audio id="ms" autoplay="autoplay" loop="loop" src="march7th.mp3"></audio>
+    <button onclick="playPause()"><img src="icon.png" alt="Icon"></button>
 </html>
