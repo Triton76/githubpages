@@ -11,14 +11,15 @@
                         
                     if (music.paused) { //判读是否播放  
                         music.play(); //没有就播放 
+                        clearInterval(intervalID);
                     }    
                     var video = document.getElementById("vd")
                     if (video.paused)
                     {
                         video.play();
+                        clearInterval(intervalID);
                     }
 
-                    clearInterval(intervalID);
             }
     </script>
     
