@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <script type="text/javascript">
+        var intervalID
         window.onload = function(){
-                 setInterval("toggleSound()",1000);
+            intervalID = setInterval(toggleSound(),1000);
             }
     
         function toggleSound() {
@@ -12,7 +13,7 @@
                         music.play(); //没有就播放 
                     }    
                     var video = document.getElementById("vd")
-                    if (video.pasued)
+                    if (video.paused)
                     {
                         video.play();
                     }
@@ -37,6 +38,6 @@
             z-index: -37;
         }
     </style>
-    <video autoplay loop muted src="march7th.mp4"></video>
-    <audio id="ms" autoplay=”autoplay” loop="loop" src="march7th.mp3"></audio>
+    <video id="vd" autoplay loop muted src="march7th.mp4"></video>
+    <audio id="ms" autoplay="autoplay" loop="loop" src="march7th.mp3"></audio>
 </html>
