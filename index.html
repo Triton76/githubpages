@@ -10,7 +10,7 @@
                     var music = document.getElementById("ms");//获取ID  
                     var video = document.getElementById("vd")
                         
-                    if (music.paused&&video.paused) { //判读是否播放  
+                    if (music && music.paused && video && video.paused) { //判读是否播放  
                         music.play(); //没有就播放 
                         clearInterval(intervalID);
                         video.play();
