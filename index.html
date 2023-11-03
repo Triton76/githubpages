@@ -8,18 +8,13 @@
     
         function toggleSound() {
                     var music = document.getElementById("ms");//获取ID  
+                    var video = document.getElementById("vd")
                         
-                    if (music.paused) { //判读是否播放  
+                    if (music.paused&&video.paused) { //判读是否播放  
                         music.play(); //没有就播放 
                         clearInterval(intervalID);
-                    }    
-                    var video = document.getElementById("vd")
-                    if (video.paused)
-                    {
                         video.play();
-                        clearInterval(intervalID);
-                    }
-
+                    }    
             }
     </script>
     
